@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- action ra target attribute hun -->
+    <pre>
+        method is either get or post huncha
+        The action attribute defines the action to be performed when the form is submitted.
+
+        The method attribute specifies the HTTP method to be used when submitting the form data.
+        get user lai kei information dinu cha bhane garnu parne ho
+        post tai user bata kei input linu parcha bhane post garne ho
+
+        target-bhaneko tai form submit garera k response dine 
+        naya page ma dekhune ho ki tei page ma basne
+    
+         form-element
+         methods-
+          label->hamro input tai k ho ta k ko lagi input ho:It can be name,age,gender ,DOB,
+          to display what user are entering
+          input->Different element-Text,Password,Number,checkbox[multiple options],radio[single choice],date,email,file,image,search,submit
+           reset->input lincha iniharu lincha,url..
+           textarea=>
+           select-dropdown box aucha
+           botton->
+
+           form ma tai fieldset pani use garincha->grouping the form element.every input lai group garna lai
+     </pre>
+    
+     <!-- by default method get ma huncha -->
+     <!-- post is secured than get -->
+    <!-- target ma _blank garyo bhane naya widnow kulcha
+    ra _self garyoum bhane tai jun tai gari rakheko chaum tei default aucha -->
+
+    <fieldset>
+    <form method="POST" target="_blank">
+
+        <label for="fname">First Name</label>
+        <!-- ini haru inline element ho.Inline element bhaneko hamile break use gare na bhane sabai eutai ma aucha -->
+        <!-- label is container tag and input is empty tag bhyo -->
+        <input type="text" id="fname" name="first_name" placeholder="Enter your name" disabled size="50" ><br>
+        <!-- here id use garyo bhane if we click on first name it goes to box -->
+        <!-- hamile form ko dta apathunu paryo bhane tai name bata pathune hai id bata value pathune hoina.for form data -->
+        <!-- if we don't apply br here sabai inline ma aucha -->
+       
+        <label for="lname">Last name</label>       
+        <!-- required is validation that meas if you try to submit empty it won't allwoed it -->
+        <input type="text" id="lname" tabindex="1" required readOnly value="pokharel"><br> 
+        <!-- here tab garyo bhane kata jane bhanera tagindex tai dinna milcha -->
+        <!-- id tai mark  garne ho kata bata kata jane bhanera -->
+
+        
+        <label for="age_label">Age</label>
+        <select name="age" id="age_label">
+            <option value="1">18</option>
+            <option value="2">19</option>
+            <option value="3">20</option>
+            <option value="4">21</option>
+            <option value="6">22</option>
+            <option value="7">23</option>
+        </select><br>
+
+        <label for="r_">Age</label>
+        <input id="r_" type="range" min="18" max="23">
+        <br><br>
+<!-- 
+        radio ma name use garnu parcha na bhaye duitai select huncha
+        and name should be similar
+        for gender-->
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="aa" id="gender" >Male
+        <input type="radio" name="aa" id="gender">Female
+        <br><br>
+       <!-- id ma space hudena -->
+
+       <label for="dob">Date of birth:</label>
+       <input type="date" id="dob"><br><br>
+
+       <label for="mail">Email</label>
+       <input type="email" id="mail">
+       <br><br>
+
+       <label for="image">Image</label>
+       <input type="file" id="image">
+       <br><br>
+
+       <label for="interests">Hobbies & Interests</label>
+       <input type="checkbox" id="interests">Game & Sports
+       <input type="checkbox" id="interests">Travelling
+       <input type="checkbox" id="interests">Reading
+       <input type="checkbox" id="interests">Photography
+       <br><br>
+
+       <label for="desc">About Yourself:</label>
+       <textarea name="descs" id="desc" cols="15" rows="10"></textarea>
+       <!-- cols bhaneko kati wota character atune bhyo eow bhaneko kati wota line bhyo -->
+       <br><br>
+
+       <!-- button ko lagi duita options cha -->
+       <input type="submit" value="Regiser">
+       <!-- here hamile jun value dincyou tei value display huncha -->
+       <input type="reset">
+      
+       <!-- or -->
+       <button style="background-color: red;">
+           SUBMIT
+       </button>
+       <br><br>
+       <label for="pass">Password</label>
+       <input type="password">
+    </fieldset>
+    <!-- fieldset defines the frame -->
+<div style="height: 300px;" >
+</div>
+
+
+
+
+<!-- 
+        <label for="aa">A</label>
+        <input type="text" id="">
+
+        <br>
+        <label for="">B</label>
+        <input type="text" id="aa"> -->
+
+
+    </form>
+
+
+</body>
+
+</html>
