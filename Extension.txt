@@ -1,0 +1,9 @@
+- Live server
+
+- ES7+React/Redux/React-Native Snippets
+- Babel JavaScript
+- HTML Snippets
+- IntelliSense for CSS class names in HTML
+- Prettier-Code formatter
+- HTML CSS Support(Optionals)
+-HTML Snippets
