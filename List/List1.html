@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    List:
+
+    <pre>
+        An unordered list is a collection of related items that have no special order or sequence.For eg.Shopping 
+        This list is created by using HTML <ul> tag. Each item in the list is marked with a bullet.
+        We can use "type" attribute for <ul> tag to specify the type of bullet you like. By default, it is a disc.
+        Types:
+        -disc
+       -squared
+       -circle
+       ;
+
+        Orderd list:If ordered matters.It is list  of collection of related items that have special order or sequence.or egs:Food delivery
+        If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used. 
+        This list is created by using <ol> tag.
+         The numbering starts at one and is incremented by one for each successive ordered list element tagged with <li>.
+        If direction matters.
+        Types:
+        -1,2,3 
+        -a,b,c
+        -A,B,C 
+        -i,ii,iii
+        -I,II,III 
+        Start attribute:We can use start attribute for <ol> tag to specify the starting point of numbering you need.
+            <ol type = "1" start = "4"> - Numerals starts with 4.
+            <ol type = "I" start = "4"> - Numerals starts with IV.
+            <ol type = "i" start = "4"> - Numerals starts with iv.
+            <ol type = "a" start = "4"> - Letters starts with d.
+            <ol type = "A" start = "4"> - Letters starts with D.
+
+
+    </pre>
+
+    For unordered list:
+    <ul>
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ul>
+
+    <ul type="square">
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ul>
+
+<ol>
+    <li>Laptop</li>
+    <li>Mobile
+        <ol type="A">
+            <li>Samsung</li>
+            <li>Apple</li>
+            <li>Mi</li>
+        </ol>
+    </li>
+    <li>Graphic card</li>
+    
+</ol>
+    For ordered list:
+    <ol>
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ol>
+    <ol type="1">
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ol>
+    <ol type="I">
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ol>
+
+
+    Start attribute of ordered list:
+
+    <ol type="i" start="4">
+        <li>Beetroot</li>
+        <li>Ginger</li>
+        <li>Potato</li>
+        <li>Radish</li>
+    </ol>
+
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <pre>
+          Nested lists:
+      </pre>
+
+      <ul>
+          <li>Item 1
+              <ol type="5" start="60">
+                  <li>Item a</li>
+                  <li>Item b</li>
+                  <li>Item c</li>
+              </ol>
+          </li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ul>
+
+
+      <ol>
+          <a href="form.html"><li>Go to Form</li></a>
+          <a href="table1.html"><li>Go to table</li></a>
+
+          <li>External pages
+              <ul>
+                  <a href="www.google.com"><li>Google</li></a>
+                  <a href="www.fb.com"><li>Facebook</li></a>
+                
+              </ul>
+          </li>
+      </ol>
+
+</body>
+
+</html>

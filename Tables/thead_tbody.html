@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <pre>
+        The <thead> tag is used to group header content in an HTML table.
+            The <tbody> tag is used to group the body content in an HTML table.
+
+            Those tags are not required. It is considered good form to use them if the table is used to represent data,
+             which is what a table should be used for.
+             If a table is used for laying out content they are typically omitted.
+
+    </pre>
+
+    <table border="1" width="100%">
+        <thead style="background-color:red">
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+
+        <tbody style="background-color:blue">
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr style="height:100px">
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+
+        <tfoot style="background-color:yellowgreen">
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table>
+
+
+      Vertical-align:top,bottom
+      Text-align:left,right,center
+      
+    <table border="1" width="100%" style="margin-top: 90px;">
+
+        <thead style="height: 100px;" >
+          <tr > 
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+
+        <tbody style="vertical-align:bottom;">
+          <tr style="height:50px">
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr style="height:100px">
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table>
+
+
+    
+</body>
+</html>
