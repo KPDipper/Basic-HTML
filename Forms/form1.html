@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        The <form> element is a container for different types of input elements, 
+            such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+
+        for form atrributes
+        The method attribute specifies the HTTP method to be used when submitting the form data.
+        get user lai kei information dinu cha bhane garnu parne ho
+        post tai user bata kei input linu parcha bhane post garne ho
+       Get: 1.This method is useful for form submissions where a user want to bookmark the result
+            2.There is a limit to how much data you can place in a URL (varies between browsers), therefore,
+            you cannot be sure that all of the form-data will be correctly transferred
+            3.Never use the "get" method to pass sensitive information! (password or other sensitive information will be visible in the browser's address bar)
+         
+        Post:This method sends the form-data as an HTTP post transaction
+
+
+        The action attribute defines the action to be performed when the form is submitted.
+        for eg the form data is sent to a file called "action_page.php"
+        Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+
+        The target attribute specifies where to display the response that is received after submitting the form.
+
+
+        _blank:The response is displayed in a new window or tab
+        _self:The response is displayed in the current window
+        _top	The response is displayed in the full body of the window
+
+    </pre>
+
+    <pre>
+        Label is container tag
+        Input is empty tag
+        The for attribute of the <label> tag should be equal to the id attribute of the <input> 
+        element to bind them together.
+        label:Hamro input tai kho ta, k ko lagi input dina lako
+        Label can be name age gender,date of birth ini haruko lagi lae
+        -to dispaly what users are entering
+        novalidate-sabai validatehunu pardai jaba submit garda kher
+    </pre>
+    <form method="GET" target="_blank" action="">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"  readOnly value="Kshitiz" name="f_name"><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="l_name" placeholder="enter your name" size="50"><br>
+
+        <label for="dob">Date of birth</label>
+        <input type="date" id=""><br>
+ <pre>
+    input->Different types-Text,Password,Number,checkbox[multiple options],
+     radio[single choice],date,email,file,image,search,submit,color,url...,reset(input lina ko lagi)
+     Forms element:
+     textarea,select(dropdownbox)
+     fieldset,legend,button
+    input atrribures:required,readOnly,disabled
+
+    hami lai form ko data pathunu paryo bhane "name" bata pathune.
+    here id tai mark garna ko lagi ho kata bata kata jana ko lagi
+ </pre>
+
+ Dropdown:<br>
+<label for="_age">Ages</label>
+<select name="isname" id="_age">
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+
+</select><br>
+
+<label for="_range">Age</label>
+<input id="_range" type="range" min="18" max="21"><br>
+
+
+<br><br>
+
+For radio:<br><br>
+
+<label for="_gender">Gender</label>
+<input type="radio" id="_gender" name="MM">Male
+<input type="radio" id="_gender" name="MM">Female<br>
+<pre>e should also provide same name in input for radio so it only select on radio</pre>
+
+<label for="email">Email</label>
+<input type="email" id="email" maxlength="20">
+<!-- autocomplete="off" if you don't want any autocomplete-->
+<br><br>
+
+<label for="image">Image</label>
+<input type="file" id="image"><br><br>
+
+Checkbox:<br>
+
+<label for="interests">Hobbies</label>
+<input type="checkbox">Foods
+<input type="checkbox">Entertainment
+<input type="checkbox">Travelling
+<input type="checkbox">Entertainment<br><br>
+
+Textarea (desc):
+<label for="desc">Description</label>
+<textarea name="_desc" id="desc" cols="30" rows="10"></textarea><br><br>
+
+
+        <input type="submit" value="REGISTER"><br><br>
+        <input type="reset">
+        <button >Submit</button>
+<pre>
+    The form-handler is typically a server page with a script for processing input data.
+
+The form-handler is specified in the form's action attribute:
+</pre>
+
+    </form>
+    
+</body>
+</html>
