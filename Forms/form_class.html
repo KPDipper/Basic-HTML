@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <pre>
+    form element:label,input
+    input types:text,number,file,date,image,submit,week,
+    checkbox[multiple chocies],radio[single choise],password,email,url,range
+
+        here for of label and id of input shobule be same to bind them together
+   
+    -button
+   -selection[dropwdown]
+   -textarea
+    </pre>
+    <form>
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="f_name"><br><br>
+        
+        
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname"><br><br>
+
+        <label for="age">Age</label>
+        <input type="number" id="age"><br><br>
+
+        <label for="dob">Date of brith</label>
+        <input type="date" id="dob">
+        
+        <label for="range">Age</label>
+        <input type="range" id="range" min="10" max="99">
+
+        <pre>
+            For selection[form element] we don't use input
+        </pre>
+
+        <label for="cars">Cars</label>
+        <select id="cars">
+            <option>Tesla</option>
+            <option>BMW</option>
+            <option>Tesla</option>
+            <option>jaguar</option>
+
+        </select>
+
+        <pre>
+            no for radio[single choice]
+            all 3 name should be same
+        </pre>
+
+        <label for="gender">Gender</label>
+        <input type="radio" id="gender" name="gender">Male
+        <input type="radio" id="gender" name="gender">Female
+        <input type="radio" id="gender" name="gender">Prefer not to say<br><br>
+
+        <pre>
+            Emails and password
+        </pre>
+        <label for="abcd">Email</label>
+        <input type="email" id="abcd"><br>
+
+        <label for="password">Pssword</label>
+        <input type="password" id="password"><br>
+
+        <label for="time">Time</label>
+        <input type="time"><br>
+
+        <label for="hobbies">Hobbies </label>
+        <input type="checkbox" id="hobbies">
+
+        
+
+    </form>
+
+
+    
+</body>
+</html>

@@ -4,87 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form day 2</title>
 </head>
 <body>
-   
 
-    <pre>
-        Label is container tag
-        Input is empty tag
-        The for attribute of the <label> tag should be equal to the id attribute of the <input> 
-        element to bind them together.
-        label:Hamro input tai kho ta, k ko lagi input dina lako
-        Label can be name age gender,date of birth ini haruko lagi lae
-        -to dispaly what users are entering
-        novalidate-sabai validatehunu pardai jaba submit garda kher
-    </pre>
-    <form method="GET" target="_blank" action="">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname"  readOnly value="Kshitiz" name="f_name"><br>
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="l_name" placeholder="enter your name" size="50"><br>
-
-        <label for="dob">Date of birth</label>
-        <input type="date" id=""><br>
- <pre>
-    input->Different types-Text,Password,Number,checkbox[multiple options],
-     radio[single choice],date,email,file,image,search,submit,color,url...,reset(input lina ko lagi)
-     Forms element:
-     textarea,select(dropdownbox)
-     fieldset,legend,button
-    input atrribures:required,readOnly,disabled
-
-    hami lai form ko data pathunu paryo bhane "name" bata pathune.
-    here id tai mark garna ko lagi ho kata bata kata jana ko lagi
- </pre>
-
- Dropdown:<br>
-<label for="_age">Ages</label>
-<select name="isname" id="_age">
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-
-</select><br>
-
-<label for="_range">Age</label>
-<input id="_range" type="range" min="18" max="21"><br>
-
-
-<br><br>
-
-For radio:<br><br>
-
-<label for="_gender">Gender</label>
-<input type="radio" id="_gender" name="MM">Male
-<input type="radio" id="_gender" name="MM">Female<br>
-<pre>e should also provide same name in input for radio so it only select on radio</pre>
-
-<label for="email">Email</label>
-<input type="email" id="email" maxlength="20">
-<!-- autocomplete="off" if you don't want any autocomplete-->
-<br><br>
-
-
-
-Checkbox:<br>
-
-<label for="interests">Hobbies</label>
-<input type="checkbox">Foods
-<input type="checkbox">Entertainment
-<input type="checkbox">Travelling
-<input type="checkbox">Entertainment<br><br>
-
-
-
-
-
-
-
-from here today
+    <form>
+        from here today
+        <pre>
+            Input attributes:
+            value:Specifies the default value for an input field
+            size:Specifies the width (in characters) of an input field
+            maxlength:Specifies the maximum number of character for an input field
+            The input placeholder attribute specifies a short hint that describes
+             the expected value of an input field (a sample value or a short description of the expected format)
+             autocomplete:Autocomplete allows the browser to predict the value. 
+        </pre>
 
 <label for="image">Image</label>
 <input type="file" id="image"><br><br>
@@ -106,22 +40,12 @@ hidden:<br>
 <label for="hidd">Hidden</label>
 <input type="hidden" id="hidd"><br><br>
 
-<pre>
-    form attribute:autocomplete,novalidate
-</pre><br>
 
 tel:
 <label for="telephone">Phone number</label>
 <input type='tel' id="telephone"><br><br>
 
-<pre>
-    Input attributes:
-    value:Specifies the default value for an input field
-    size:Specifies the width (in characters) of an input field
-    maxlength:Specifies the maximum number of character for an input field
-    The input placeholder attribute specifies a short hint that describes
-     the expected value of an input field (a sample value or a short description of the expected format)
-</pre>
+
 
 <pre>
     The <form> element is a container for different types of input elements, 
@@ -152,6 +76,10 @@ tel:
     _top	The response is displayed in the full body of the window
 
 </pre>
+<pre>
+    form attribute:autocomplete,novalidate
+</pre><br>
+
 
 <button type="button" onclick="alert('Hello World!')">Click Me!</button><br><br>
 
@@ -166,10 +94,7 @@ The form-handler is typically a file on the server with a script for processing 
 
 The form-handler is specified in the form's action attribute.
 </pre>
-
     </form>
     
 </body>
 </html>
-
-
