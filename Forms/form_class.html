@@ -19,16 +19,27 @@
    -textarea
     </pre>
     <form>
+        <pre>
+            name:It helps to send the data to sevrer/radio single chocie possible
+            maxlength:Maximum number of characters you can write
+            size:size of textbox
+            placeholder:It gives you hint
+            value:by default code bata value aune
+            Required:You can't pass the empty field.There should be atleast on character
+            readOnly
+            disabled
+            id
+        </pre>
 
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="f_name"><br><br>
+        <input type="text" id="fname" required name="f_name"  size="5" ><br><br>
         
         
         <label for="lname">Last Name</label>
-        <input type="text" id="lname"><br><br>
+        <input type="text" id="lname"maxlength="7" value="pokharel"><br><br>
 
         <label for="age">Age</label>
-        <input type="number" id="age"><br><br>
+        <input type="number" id="age"  placeholder="Enter your age"><br><br>
 
         <label for="dob">Date of brith</label>
         <input type="date" id="dob">
@@ -72,8 +83,25 @@
         <input type="time"><br>
 
         <label for="hobbies">Hobbies </label>
-        <input type="checkbox" id="hobbies">
+        <input type="checkbox" id="hobbies"><br>
 
+        <label for="image">Image</label>
+        <input type="file" id="image"><br>
+
+        text area:
+        <label for="text_area">Description</label>
+        <textarea id="text_area" rows="20" cols="20"></textarea><br>
+
+        
+        colors,hidden:<br><br>
+        <label for="color">Colors</label>
+        <input type="color" id="color"><br><br>
+
+        <label for="hidden">Hidden</label>
+        <input type="hidden" id="hidden"><br><br>
+
+        <input type="submit" value="Resgister"><br><br>
+        <input type="reset" value="reset">
         
 
     </form>

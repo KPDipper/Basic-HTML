@@ -6,15 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <!-- <style>
+        .demo{
+            height: 300px;
+            width: 300px;
+            background-color: black;
+        }
+        h1{
+            height: 200px;
+
+        }
+    </style> -->
 </head>
 
 <body>
 
     <pre>
         CSS-Cascading style sheet
+        webpage lai ramro banaune kam garincha
         Applying desgin or decorating
         make webpage much beautiful
         makes html much better
+        CSS the (visual and aural) layout, for a variety of devices.
+        CSS handles the look and feel part of a web page. Using CSS, 
+        you can control the color of the text, the style of fonts, the spacing between paragraphs, 
+        how columns are sized and laid out, etc.
+
+
 
        i. Basic Structure:
         i.Selector{
@@ -23,28 +42,89 @@
         
         selector-> yo bhaneko tai k ma desgin garne ho/styling garne ho
         select the element ,class or id
-        attribute->prpery change garne(Hieght,color,display,background-color,image haru) change garna milcha
+        attribute->property change garne(Height,color,display,background-color,image haru) change garna milcha
         value-> what it should look like
 
         ii.Types:
         3 types:
-             a.Inline-CSS:Its is written in the same line as HTML Element.Keywors style use huncha
+             a.Inline-CSS:Its is written in the same line as HTML Element.Keywords "style" use huncha
              b.Internal-CSS:It is written in the same HTML page in the head section-style use huncha
-             c.External-CSS:It is written in seprate page with extension ".css".yesma style use hudena
+             c.External-CSS:It is written in seprate page with extension ".css" .yesma style use hudena
 
     </pre>
 
     <!-- Inline CSS -->
 
-    <div class="demo" style="background-color:aqua; width: 2000px; height: 100px; text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    <!-- <div class="demo" style="background-color:aqua; width: 2000px; height: 100px; text-align:center; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
         Hello
-    </div>
-
+    </div> -->
     
+    <!-- internal css -->
+
+    <div class="demo">
+        Hello there
+    </div>
+     
+     element selector
+    <h1 > Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officiis voluptates unde numquam expedita et, 
+        hic ratione maiores sit, 
+        rerum voluptatum eos. Ut magni facilis consequatur, sequi inventore minus tempora.</h1>
+
+          
+        class selector
+        <div class="remo">
+        well hello there 
+        </div>
+
+        <pre>
+            Element selector:
+            HTML Element,H1,body,div,p,table,tr,td,form,input all element
+            class selector:HTML class,user define class, using . before classname
+            ID selector:Using # before ID.eg:#id
+
+            differnece between id and class selector
+
+            Group selector:we can use same style to different selectors at a same time,use comma(,) bewteen selectors
+            child selector:use greater than(>) to denote child
+            descendent selector:use space to denote descendent
+            universal selector:*
+        
+        
+        </pre>
+        id selector
+        <div id="part">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore delectus consequatur earum, illum ab dolorem reiciendis beatae impedit ratione error optio itaque 
+            voluptatem corporis ipsa iure rerum. Praesentium, temporibus quidem!
+        </div>
 
 
 
+ 
+        
+        <!-- can used more than one class -->
+        <div class="demo1 demo2">
 
+        </div>
+
+        Group selector
+        <h1>This is heading</h1>
+        <h2>This is heading</h2>
+        <h3>This is heading</h3>
+        <h4>This is heading</h4>
+
+        Child selector use garyo bhane yo tala ko h1 lai matra garcha ra mathi ko h1 lai chutai garcha
+        here h1 is child of demo(div)
+        <div class="phone">
+            <h1>
+                Everything everywhere all at once
+            </h1>
+            <div>
+                <!-- here h1 is descendent -->
+                <h1>
+                    Multiverse of madness
+                </h1>
+            </div>
+        </div>
 
 </body>
 

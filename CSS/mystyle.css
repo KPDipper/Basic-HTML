@@ -1,0 +1,41 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+    background-color: whitesmoke;
+    margin: 0%;
+}
+
+
+.remo{
+    height: 300px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+/* this is group selector */
+h1,h2,h3,h4{
+    height: 200px;
+ background-color: blue;
+}
+
+#part{
+    background-color: beige;
+    font-weight: 900;
+    opacity: 20%;
+    
+}
+
+
+/* here only this h1 is change but not uper one */
+.phone >h1{
+    background-color: brown;
+    color: darkgoldenrod;
+}
+
+/* space is used here */
+/* after using descedning child will not work anymore */
+.phone h1{
+
+    background-color:red;
+}
+
