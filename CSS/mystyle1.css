@@ -1,0 +1,48 @@
+.part1 a{
+    background-color:bisque;
+    color: cadetblue;
+    height: 300px;
+    width: 30%;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    
+}
+
+
+/* .demo{
+    background-color: rebeccapurple;
+    font-size: 30px;
+
+  
+}
+
+
+.demo1{
+    background-color: yellowgreen;
+    font-size: 80px;
+} */
+
+.demo2{
+    background-color: blue;
+
+} 
+
+.semus h1{
+    background-color: red;
+    color: yellow;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight:bolder;
+
+    
+}
+
+
+
+
+
+h1,h2,h3,h4{
+    background-color: blue;
+    color: aqua;
+    
+}

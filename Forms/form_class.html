@@ -18,7 +18,20 @@
    -selection[dropwdown]
    -textarea
     </pre>
-    <form>
+    <form method="POST" action="" target="">
+        <pre>
+           1. Get:Gives information to user
+            URL:there is a limit to get method that how much you can play information in URL
+            you can't use get method wild passing sensitive information
+
+           2. post:Takes information from user
+               here there is no limit
+
+               PUT,DELETE
+
+               action attribute define action to be performed when the form is submitted
+               target:to display the response that is receive after submitting the form
+        </pre>
         <pre>
             name:It helps to send the data to sevrer/radio single chocie possible
             maxlength:Maximum number of characters you can write
@@ -53,7 +66,7 @@
 
         <label for="cars">Cars</label>
         <select id="cars">
-            <option>Tesla</option>
+            <option >Tesla</option>
             <option>BMW</option>
             <option>Tesla</option>
             <option>jaguar</option>
