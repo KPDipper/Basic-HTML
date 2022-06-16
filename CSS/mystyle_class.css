@@ -1,0 +1,41 @@
+h1{
+    background-color: blue;
+}
+.demo{
+  background-color: red;
+  font-size: small;
+}
+
+.demo1{
+  background-color: yellowgreen;
+  font-size: xx-large;
+}
+
+#part1{
+
+    background-color: blacks;
+}
+p{
+    background-color: beige;
+}
+
+/* h1,h2,h3,h4,span{
+    background-color: blue;
+} */
+
+.semus>h1 {
+    background-color: red;
+}
+
+.semus h1{
+ background-color: blue;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    background-color: yellow;
+}
