@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        ol{
+            background-color: chocolate;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-variant: small-caps;
+        }
+       ol li{
+            border: 1px solid red;
+            display:inline;
+            margin-top: 10px;
+            /* padding-top: 199px; */
+            /* here if we use display:inline then margin  top won't work */
+            font-style: italic;
+            font-variant: small-caps;
+
+        }
+        ol li a{
+            text-decoration: none;
+            color:aqua
+
+        }
+
+        ol li a:hover{
+            color:red;
+        }
+        .first{
+            height: 200px;
+            width:900px;
+            background-color: aqua;
+        }
+        .second{
+            height: 200px;
+            max-width: 900px;
+            background-color: violet;
+        }
+        .third{
+            height: 200px;
+            max-width: 900px;
+            background-color: red;
+        }
+
+        h2{
+            display:none;
+        }
+        h4{
+            visibility: hidden;
+        }
+
+
+
+    </style>
+</head>
+<body><pre>
+    Block-level Elements
+A block-level element always starts on a new line and 
+takes up the full width available (stretches out to the left and right as far as it can).
+
+Inline Elements
+
+An inline element does not start on a new line and only takes up as much width as necessary.
+
+link:go to inline and block element if necssary
+
+
+</pre>
+<pre>
+1.Compared to display: inline, the major difference is that display: 
+inline-block allows to set a width and height on the element.
+
+2.Also, with display: inline-block, the top and bottom margins/paddings are respected, 
+but with display: inline they are not.
+
+
+
+3.Compared to display: block, the major difference is that display: 
+inline-block does not add a line-break after the element, so the element can sit next to other elements.
+
+
+
+
+</pre>
+    <ol>
+        <li><a href="">aa</a></li>
+        <li><a href="">ab</a></li>
+        <li><a href="">ac</a></li>
+        <li><a href="">ad</a></li>
+
+    </ol>
+    
+<pre>
+    here width bhyo bhane fixed huncha broswer changed huda
+    max-width bhaneko tai dynamic huncha  so changed huncha
+    page lai responsive banunu cha bhane max width garincha
+
+</pre>
+<pre>
+    Here difference between hidden and none is that hidden le space kancha
+</pre>
+    <div class="first">1</div>
+    <div class="second">2</div>
+    <div class="third">3</div>
+    <h1>This is heading</h1>
+    <h2>This is heading</h2>
+
+    <h3>This is heading</h3>
+    <h4>This is heading</h4>
+
+
+</body>
+</html>
