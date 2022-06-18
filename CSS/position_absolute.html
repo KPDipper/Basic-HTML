@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .demo{
+            height:300px;
+            width:700px;
+            background-color: violet;
+            position: absolute;
+            /* here yo 20px relative to its parent page */
+            left: 50px;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- when there is not parent elemnt for absolute position -->
+
+    <pre style="margin-bottom: 50px;">
+        here kina overlap bhairacha bhane since that div is absolute it won't changed its positions even for other element
+        absolute le arko content lai checkha so kashai use hunna
+        here go to website http://annapurna.edu.np/
+        then in carasouel we see indicator left and right they are absoulte relative to its images
+    </pre>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto doloribus optio dolorem aperiam corporis inventore impedit, repudiandae 
+    praesentium nulla eius vitae pariatur, corrupti eligendi numquam delectus laboriosam modi et qui!</p>
+    <div class="demo">
+        This is a division
+    </div>
+
+
+</body>
+</html>

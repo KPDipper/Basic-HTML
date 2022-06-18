@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+
+        }
+        div{
+            height:300px;
+            width:100%;
+            padding:10px;
+            background-color: red;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:whitesmoke;
+            margin: auto;
+            position: relative;
+            top: 25px;
+            /*here top bata abha 25px chodinca */
+            /* top ra bottom sanagi use na garne */
+            
+
+        }
+        .div1{
+            height:300px;
+            width:80%;
+            padding:10px;
+            background-color: blueviolet;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:whitesmoke;
+            margin: auto;
+            /* margin-top: 40px; */
+            /* position:static; */
+            /* yo by default bhyo */
+            position: relative;
+            left:30px;
+            top: 170px;
+            
+
+
+        }
+
+        .absolute{
+
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- <pre>
+        by default positions are static
+        -static(sabai static bhyo)
+        -relative:position relative to its normal positions-jun tai position ma hunu parne ho tyo position bhanda kati pixel para cha
+         attribute use garna sake bhaneko top left,bottom ,right we can use this position
+        -absolute-position relative to its parent element.here suppose this div is parent element
+
+        difference:
+        -here in relative parents sanga kei matlab bhayena.esma tai jun afno normal position bhyo normal position bhanda kati para.
+        top bata pixel chodne bottom bata kati shift hune  yo relative ma huncha.
+        -in absolute afno parent element cha tyo bhanda tesko relative ma kati shift hune
+         yedi absolute position parent chaina bhane hamro body huncha ni teslai parents lincha
+
+         -fixed position-
+         -sticky position-
+
+         "Margin is that space between the edge of an element's box and the edge of the complete box, 
+         such as the margin of a letter. 'top' displaces the element's margin edge from the containing blocks box,
+          such as that same piece of paper inside a cardboard box, but it is not up against the edge of the container."
+
+        -margin auto garda kheri tai left ra right ma equal mrgin chodincha
+        -here width:100% auda kheri halka scroll huncha
+
+
+    </pre> -->
+
+     <!-- yo parent division
+    <div>
+
+
+         child attribute 
+        <div>
+
+        </div>
+    </div>  -->
+
+
+    <div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore ut ad magni. A aspernatur eos quaerat tempora similique, 
+        nihil atque rem eveniet deleniti temporibus eligendi error beatae, nobis recusandae sit! Lorem ipsum dolor, 
+        sit amet consectetur adipisicing elit. Quidem, repellendus dolorem officiis 
+        repellat error tempore facilis atque maxime nostrum consequuntur deserunt molestias 
+        blanditiis quasi necessitatibus nam aliquid laudantium harum perferendis.
+    </div>
+
+    <div class="div1">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore ut ad magni. A aspernatur eos quaerat tempora similique, 
+        nihil atque rem eveniet deleniti temporibus eligendi error beatae, nobis recusandae sit! Lorem ipsum dolor, 
+        sit amet consectetur adipisicing elit. Quidem, repellendus dolorem officiis 
+        repellat error tempore facilis atque maxime nostrum consequuntur deserunt molestias 
+        blanditiis quasi necessitatibus nam aliquid laudantium harum perferendis.
+    </div>
+
+
+   now to go to position absolute
+</body>
+</html> 

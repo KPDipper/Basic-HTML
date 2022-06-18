@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* margin:0; */
+        }
+        div{
+            height: 500px;
+            width:700px;
+            margin:auto;
+            position: relative;
+
+        }
+         img{
+          height:auto;
+          width: 100%;
+        }
+        .left{
+
+            font-size:larger;
+            font-weight:gold;
+            color:violet;
+            background-color: teal;
+            position: absolute;
+            left:10px;
+            top:38%;
+            
+            
+        }
+        .right{
+
+            font-size:larger;
+            font-weight:gold;
+            color:violet;
+            background-color: teal;
+            position: absolute;
+            right:0;
+            top:38%;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- now using position absoulte using parent -->
+    <pre>
+        here image bitra div cha ni tyo tai parent hune bhyo since now image is 100% of div
+        here div parent bhyo so position tai relative dinu parcha dinu parcha
+    </pre>
+    
+    <div>
+        <img src="Ud.png" alt="">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </div>
+
+    
+</body>
+</html>
