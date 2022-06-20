@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+            margin:0;
+        } */
+        .demo{
+            height:300px;
+            width:700px;
+            background-color: violet;
+            position: absolute;
+            /* here yo 20px relative to its parent page */
+            left: 50px;
+bottom: 0;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+
+
+    <pre style="margin-bottom: 50px;">
+        here kina overlap bhairacha bhane since that div is absolute it won't changed its positions even for other element
+        absolute le arko content lai checkha so kashai use hunna
+        here go to website http://annapurna.edu.np/
+        then in carasouel we see indicator left and right they are absoulte relative to its images
+
+        when there is not parent elemnt for absolute position 
+
+        absoulote position is used when you want  to stick in specfific position and 
+        you don't want anything to move around it
+        here in absolute if give top 10px then element will be 10px from top begining
+        yedi bottom:0 cha bhane sab bhanda bottom ko bhanda 0 px gap huncha
+        relative ma afnai relative anusar shft huncha 
+
+        difference :absolute doesnt care about document flow so it ignores other elements
+        -here in relative parents sanga kei matlab bhayena.esma tai jun afno normal position bhyo 
+        normal position bhanda kati para.
+        top bata pixel chodne bottom bata kati shift hune  yo relative ma huncha.
+        -in absolute afno parent element cha tyo bhanda tesko relative ma kati shift hune
+         yedi absolute position parent chaina bhane hamro body huncha ni teslai parents lincha
+
+         here parents other than static can bes used as a parent
+        
+    </pre> 
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto doloribus optio dolorem aperiam corporis inventore impedit, repudiandae 
+    praesentium nulla eius vitae pariatur, corrupti eligendi numquam delectus laboriosam modi et qui!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit non, animi tempore quidem sed pariatur. Vitae, dolores sunt voluptate, perspiciatis tenetur
+ hic necessitatibus nesciunt ipsum fugiat nemo esse modi natus?
+</p>
+
+    <div class="demo">
+        This is a division
+    </div>
+
+
+</body>
+</html>

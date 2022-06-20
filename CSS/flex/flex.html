@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .container{
+            height: 800px;
+            width:100%;
+            background-color: purple;
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            /* row is default  flex-direction hattepachi flex direction garnu parcha*/
+
+        }
+        .item{
+            height:300px;
+            width:300px;
+             background-color: chartreuse;
+             margin:10px;
+             font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        Flex jaile parent ma use garne hai
+
+    The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model,
+    and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. 
+    bascially esle item by default equally distribute garcha sabai euta line ma aucha.
+    jati wota item badyo bhane ni sabai eutai line ma aucha everytime.
+    for eg navbar banuna sakincha
+    here width change garyo bhane kei hunna since flex le sabai ekai line ma item lai halyo so eutai line ma arrange garcha
+    ra width consider gardena
+    in flex wrap width consider huncha ra dehrai item bhyo bhane yeslai next line ma lagcha 
+    flex-wwrap:wrap is responsive
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+
+    display: inline-flex does not make flex items display inline. It makes the flex container display inline. That is the only difference between display: inline-flex and display: flex.
+
+    The Flexible Box Layout Module, makes it easier to design flexible 
+    responsive layout structure without using float or positioning.
+
+
+
+    </pre>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+
+
+    </div>
+    
+</body>
+</html>
