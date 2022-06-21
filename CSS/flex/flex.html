@@ -8,6 +8,7 @@
     <style>
         *{
             margin:0;
+            box-sizing: border-box;
         }
         .container{
             height: 800px;
@@ -16,7 +17,9 @@
             display: flex;
             flex-wrap: wrap;
             /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
             /* row is default  flex-direction hattepachi flex direction garnu parcha*/
+            /* esle flex le sbaai item lai eutai line lyaucha */
 
         }
         .item{
@@ -30,8 +33,13 @@
     </style>
 </head>
 <body>
+
+   
     <pre>
+        flex->arrange the child componenets
+
         Flex jaile parent ma use garne hai
+
 
     The Flexible Box Module, usually referred to as flexbox, was designed as a one-dimensional layout model,
     and as a method that could offer space distribution between items in an interface and powerful alignment capabilities. 
@@ -40,8 +48,19 @@
     for eg navbar banuna sakincha
     here width change garyo bhane kei hunna since flex le sabai ekai line ma item lai halyo so eutai line ma arrange garcha
     ra width consider gardena
+</pre>
+<pre>
+    flex wrap responsive:
+    Flex wrap is responsive huncha noramlly scroll bar aucha ra scroll garnu parcha
+    tara yesma tai viewport sano bhyo bhane items ni screen sanga adjust sanga garcha
+    device ko width sangai no. of item in single line ni change huncha 
+</pre>
+<pre>
+
+
     in flex wrap width consider huncha ra dehrai item bhyo bhane yeslai next line ma lagcha 
     flex-wwrap:wrap is responsive
+
     flex-direction: column;
     flex-direction: column-reverse;
 
@@ -51,9 +70,9 @@
     The Flexible Box Layout Module, makes it easier to design flexible 
     responsive layout structure without using float or positioning.
 
+</pre>
 
 
-    </pre>
     <div class="container">
         <div class="item">1</div>
         <div class="item">2</div>
@@ -65,9 +84,15 @@
         <div class="item">8</div>
         <div class="item">9</div>
         <div class="item">10</div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos aspernatur, eligendi nemo quis,
+             tenetur repudiandae expedita esse iste laboriosam ab ullam eius sit
+             commodi doloremque enim voluptatibus aut officia pariatur?</p>
 
 
     </div>
     
+    <pre>
+        now to manage spacing between content go to next page
+    </pre>
 </body>
 </html>

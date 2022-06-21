@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-display</title>
+    <style>
+        *{
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 800px;
+            width:100%;
+            background-color: purple;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content:flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            justify-content: center;
+            
+
+        }
+        .item{
+            height:300px;
+            width:300px;
+             background-color: chartreuse;
+             margin:10px;
+             font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        flex->arrange the child componenets
+        -justify-content-esle left right ko spacing haru ko lagi kam garcha 
+        work with space between the child componenets horizontally
+
+        -align-items-work with height of the child componenets
+        -align-content-work with space between child componenets vertically
+    </pre>
+    <pre>
+        justify-content
+
+        Flex-start is default and no difference.here yesma sabai items first ma huncha
+
+        flex-end:here sabai items end ma jancha instead of start items goes through end
+
+        space-around-esle items haru lai spacing equally di-racha left and right ma
+        around ma equal space dincha
+
+        space-between:duita element ko bich space equal pardincha but not start and end
+
+        space-evenly:esle space barabar pardincha
+        make margin:0
+
+        center:sabai center ma lagdincha
+
+
+    </pre>
+    <pre>
+        
+    </pre>
+    
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+      
+        <p>
+            flex
+            -justify-content
+            -align-items
+            -align-content
+        </p>
+    </div>
+    
+</body>
+</html>

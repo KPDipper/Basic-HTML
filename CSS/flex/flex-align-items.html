@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 800px;
+            width:100%;
+            background-color: purple;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            /* align-items: flex-start; */
+            align-items: flex-end;/* towards bottom*/
+            align-items: center;/* towards center*/
+            align-items: stretch;
+            /* yesle sabai ko height barabar garcha taking the longest height of any items 
+            if height is not mention in any one of the items then it will take longest height of items
+            */
+
+
+
+            
+            
+            
+
+        }
+        .item{
+            height:300px;
+            width:300px;
+             background-color: chartreuse;
+             margin:10px;
+             font-size: xx-large; 
+             
+        }
+
+        .item2{
+
+            height:500px;
+            width:300px;
+             background-color: chartreuse;
+             /* margin:10px; */
+             font-size: xx-large;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        what if items have different hieghts
+        in here align items is used
+
+        flex-start is default
+        align-items: flex-end;/* towards bottom*/
+
+    </pre>
+
+    
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item2">2</div>
+        <div class="item">3</div>
+    </div>
+
+      
+</body>
+</html>
