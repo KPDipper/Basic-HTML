@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            height: auto;
+            width: 700px;
+            overflow: hidden;
+            margin: auto;
+        }
+        img {
+            height: auto;
+            /* image ko jun ascpect ratio cha teslai afai milaucha 
+            so maile width badyaa bhane height ni tei ratio ma badcha*/
+            width: 100%;
+            border: 2px solid darkgoldenrod;
+            transition: 2s;
+
+        }
+
+        img:hover {
+            transform: scale(1.75);
+            /*for both*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container"> 
+    <img src="1.jpg" alt="...">
+    </div>
+
+    <pre>
+        Zoom haru kasari garne tyo type ko
+        abha style bata milaune
+        esko aspect ratio ramro hayena
+        so width badi huncha and hight kam huncha
+    </pre>
+    <pre>
+        scale2d:
+        Here scalex le x direction ma matra garne bhyo
+        y le y direction ma matra garne bhyo
+        maile scale ma 1 bhanda sano number diye bhane sano huncha
+        1 bhanda thulo dye bhane tai dhulo huncha
+    </pre>
+
+    <pre>
+        Div:
+        Yo tai division bhanda thulo bhai racha
+        esko lagi k garnu paryo bhane img jun div ma cha teslai overflow:hidden garnu paryo
+    </pre>
+    <pre>
+        Transiition so that it can slow the zoom in zoom out
+        do transition in image
+        yedi img:hover ma garyo bhane transition 2s laghca tara mouse hatune bitikai 2s lagdena
+    </pre>
+</body>
+
+</html>
