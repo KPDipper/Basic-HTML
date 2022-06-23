@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav{
+    background-color: black;
+    color:whitesmoke;
+    font-size: x-large;
+    
+
+}
+
+ul{
+    display: flex;
+    flex: wrap;
+   justify-content: space-evenly;
+   /* we use flex and flex wrap so that items can wrap evenly in navbar */
+
+}
+
+ul li{
+   list-style: none;
+   display: block;
+   padding: 10px;
+
+   /* display inline block garya since it can be used to provide padding up and down */
+}
+
+ul li  a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+ul li  a:hover{
+    color:bisque
+}
+
+nav ul li ul{
+    display: flex;
+    flex: wrap;
+   justify-content: space-evenly;
+}
+
+.dropdown{
+    padding: 5px;
+    width:200px;
+    background-color: gray;
+    
+    position: absolute;
+    display: block;
+    top:48px;
+    left:340px;
+    display: none;
+
+
+    /* here bullet default adding hatuna ko lagi padding 0 garne ho */
+    /* here  display:block garyoum bhane sabai tala aucha */
+    /* here display: flex ,flex-raple k garyo bhane width badnu pachi item tala jaryo; */
+    /* here normal conditions ma display:none hunu paryo */
+
+}
+
+
+/* here yedi hamile list ma hover garyo bhane dropwdown bhane class display block hunu paryo */
+ul li:hover .dropdown{
+
+    display: block;
+
+}
