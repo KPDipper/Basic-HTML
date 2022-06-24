@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cover{
+            height:auto;
+            width:700px;
+           margin:auto;
+           overflow: hidden;
+           /* this  helps to hide the image that overflow the div element */
+        }
+       .cover img{
+         height:auto;
+         width:100%;
+         border: 1px solid darkmagenta;
+         /* transition: 2s; */
+        
+        }
+       .cover img:hover{
+            transform: scale(1.5);
+            /* transofrm occurs only when we hover the img  */
+            transition: 1.5s;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        Make height auto so that image will be fit and maintain aspcet ratio
+    </pre>
+
+    <div class="cover">
+        <img src="1.jpg" alt="Multivrse">
+    </div>
+    <div class="cover1">
+        <img src="1.jpg" alt="Multivrse">
+    </div>
+    <div class="cover2">
+        <img src="1.jpg" alt="Multivrse">
+    </div>
+    
+</body>
+</html>

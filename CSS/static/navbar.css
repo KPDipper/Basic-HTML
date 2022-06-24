@@ -1,58 +1,73 @@
-*{
-    margin:0;
+* {
+    margin: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-nav{
-    background-color: black;
-    color:whitesmoke;
+nav {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
     font-size: x-large;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+.div_left{
+    width:25%;
+    padding:10px;
+}
+
+.div_right{
+
+    width: 75%;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* we use flex and flex wrap so that items can wrap evenly in navbar */
     
 
 }
 
-ul{
-    display: flex;
-    flex: wrap;
-   justify-content: space-evenly;
-   /* we use flex and flex wrap so that items can wrap evenly in navbar */
-
-}
-
-ul li{
-   list-style: none;
-   display: block;
-   padding: 10px;
-
-   /* display inline block garya since it can be used to provide padding up and down */
-}
-
-ul li  a{
-    text-decoration: none;
-    color:whitesmoke;
-}
-
-ul li  a:hover{
-    color:bisque
-}
-
-nav ul li ul{
-    display: flex;
-    flex: wrap;
-   justify-content: space-evenly;
-}
-
-.dropdown{
-    padding: 5px;
-    width:200px;
-    background-color: gray;
-    
-    position: absolute;
+ul li {
+    list-style: none;
     display: block;
-    top:48px;
-    left:340px;
+    padding: 10px;
+    
+
+    /* display inline block garya since it can be used to provide padding up and down */
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: 0.5s;
+
+}
+
+ul li a:hover {
+    color: bisque;
+   background-color: indianred;
+   padding: 10px;
+   border-radius: 7%;
+}
+
+
+.dropdown {
+    padding: 5px;
+    width: 200px;
+    background-color: gray;
+
+    position: absolute;
+    /* display: block; */
+    top: 60px;
+    left: 610px;
     display: none;
+
 
 
     /* here bullet default adding hatuna ko lagi padding 0 garne ho */
@@ -64,8 +79,40 @@ nav ul li ul{
 
 
 /* here yedi hamile list ma hover garyo bhane dropwdown bhane class display block hunu paryo */
-ul li:hover .dropdown{
+ul li:hover .dropdown {
 
     display: block;
 
+}
+
+.dropdown li a:hover{
+    background-color: rgb(101,101,101);
+}
+
+
+/* dropdown bitra ko yo li lai tai hover garyo bhaen sub-dropdowwn show hunu parcha */
+
+.sub-dropdown{
+    background-color: lightblue;
+    color:rgb(157,129,101);
+    display: none;
+    position: absolute;
+
+    /* here dell haru yo laptop ko lagi parent bhyo 
+    so yesko division cha yesko 100% kate pachi matra yo division aune bhyo
+    ra laptoo kata cha tya bata suru huncha
+    */
+    left:100%;
+    top:0%;
+    padding: 10px;
+    width:100%;
+}
+
+.extra{
+    width:70%;
+}
+
+.dropdown li:hover .sub-dropdown{
+
+    display: block;
 }
