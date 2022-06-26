@@ -78,7 +78,7 @@ nav {
 
     position: absolute;
     /* display: block; */
-    top: 61px;
+    top: 98px;
     left: 610px;
     display: none;
 
@@ -130,3 +130,97 @@ nav {
     display: block;
 } */
 
+
+main{
+    width:100%;
+     background-color: rgb(182, 188, 210);
+     /* height: 900px;    */
+     height: 650px;   
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.body_left{
+
+    width:20%;
+    background-color: rgb(171,203,176);
+    /* height: 900px;    */
+    height: 650px;   
+
+   
+
+
+/* here division ma left ra right block bhhaner airacha ra right ni divison bhanda bhaira cha
+since div tai block element bhyo  so mparents jun main ho tesma display:flex garnu parchas*/
+
+}
+
+/* go to amazon */
+/* lets use unordered list */
+.body_left_top{
+display: flex;
+margin-top: 20px;
+flex-direction: column;
+padding: 20px;
+
+}
+
+.body_left_bottom{
+
+}
+
+/* here yo sbai flex matra huncha since hamile mathi ul ma display flex garya chau wich also works here so */
+.body_left_top ul li {
+    padding: 10px;
+    list-style:none;
+
+}
+
+
+/* yeta tai abha hamile card haru banuachyoum */
+.body_right{
+    width: 80%;
+    background-color: rgb(220,203,191);
+    /* height: 900px;    */
+    height: 650px;   
+
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-content: space-around;
+
+}
+/* here body_right parents huncha gallery ko so hamile yesma parents ma display flex gareko */
+
+
+.div_right_content{
+    height: 400px;
+    width:300px;
+    background-color: bisque;
+
+}
+
+.img-div{
+
+   /* yo margin ko lagi chodeko */
+    width:95%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.img-div img{
+    width: 100%;
+    text-align: center;
+}
+
+.img-title{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.desc{
+    padding: 10px;
+    text-align: justify;
+}

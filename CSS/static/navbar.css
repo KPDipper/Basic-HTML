@@ -21,7 +21,7 @@ nav {
 
 .div_right{
 
-    width: 75%;
+    width: 70%;
 }
 
 ul {
@@ -97,11 +97,6 @@ ul li:hover .dropdown {
     color:rgb(157,129,101);
     display: none;
     position: absolute;
-
-    /* here dell haru yo laptop ko lagi parent bhyo 
-    so yesko division cha yesko 100% kate pachi matra yo division aune bhyo
-    ra laptoo kata cha tya bata suru huncha
-    */
     left:100%;
     top:0%;
     padding: 10px;
@@ -113,6 +108,10 @@ ul li:hover .dropdown {
 }
 
 .dropdown li:hover .sub-dropdown{
-
     display: block;
 }
+/* 
+.dropdown li:hover .sub-dropdown{
+
+    display: block;
+} */
