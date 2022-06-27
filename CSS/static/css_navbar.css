@@ -129,4 +129,28 @@ nav {
 
     display: block;
 } */
+main{
+    width: 100%;
+    background-color: rgb(182,188,210);
+    height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.body_left{
+    width:20%;
+    background-color: rgb(171,203,176);
+    height: 650px;
+
+}
+
+.body_right{
+    width:80%;
+    background-color:rgb(220,203,191);
+    height: 650px;
+
+}
+
+.body_left_top ul li{
+    
+}
