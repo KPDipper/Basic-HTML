@@ -1,0 +1,16 @@
+.content{
+    height:600px;
+    width:100%;
+    background-image: url('1.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;/* here fixed ma scroll huda ni tei position ma bascha*/
+    background-position-x:right ;/* here yo image horiztoanly right jancha*/
+    background-position-x: center;
+
+      /* background-attachment: scroll; */
+    /* background-repeat: repeat-y; use much height for this*/
+     /* contain le hight ra width ratio na milyera aucha */
+    /* cover grda tai full elment cover huncha but clipping huncha katincha */
+    /* div ko height ko image ko hoina */
+}
