@@ -23,8 +23,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    /* position: sticky;
-    top:1px; */
+    position: sticky;
+    top:1px;
 
 }
 
@@ -132,7 +132,7 @@ nav {
 main{
     width: 100%;
     background-color: rgb(182,188,210);
-    height: 1250px;
+    height: 1650px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -214,4 +214,25 @@ button:hover{
     text-align: justify;
     background-color: rgba(150, 117, 47, 0.422);
     cursor: pointer;
+}
+
+
+.bottom{
+    width:100%;
+    height:350px;
+    background-color: rgb(117,167,186,0.65);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.bottom-content{
+    width:45%;
+    background-color: rgb(167,117,137,0.71);
+}
+
+iframe{
+    width:100%;
+    height: 100%;
 }

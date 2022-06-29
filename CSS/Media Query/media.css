@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 500px;
+    width:100%;
+    /* here when it is % its responsive but not on pixel*/
+  
+   background-color: blue;
+    color: yellowgreen;
+    padding: 30px;
+    /* padding haru jata ni kam lagcha */
+}
+
+/* here 0-480px samma kam garne bhyo hamro .container ma */
+/* here yedi maile 540 bhanda sano parna kojyo bhane background color change huncha */
+@media screen and (max-width:540px){
+    /* yesko range 480 to 540 samma huncha */
+    .container{
+        /* background-color: black; */
+        background-image: url(IOS.jpg);
+        background-size: contain;
+    }
+     
+}
+/* we can use more breakpoint */
+/* min width yedi 540 cha bhane tyo bhanda mathi bhaneko  */
+@media screen and (max-width:500px){
+    .container{
+        background-color: brown;
+    }
+}
+
