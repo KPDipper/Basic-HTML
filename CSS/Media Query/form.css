@@ -17,15 +17,20 @@ form{
 }
 
 label{
+    /* sur ma 25 % garda kheri linline elment ma dekhina  block garyo bhane full lincha
+    here 75 ra 25 hunu parne ho tara padding le garda badi huncha so make it 73
+    */
     /* label chai inline element ho inline elemnt ma dekhinna so make it inline-block element */
     width:25%;
     display: inline-block;
     margin-bottom: 10px;
     /* yo pachi garne */
-
-    
- 
+    font-size: 20px;
+    vertical-align: top;
+     
 }
+
+/* here male ra famale label lai 25% use garnu bhayena */
 .custom-label{
     display: inline;
 }
@@ -38,12 +43,19 @@ select,textarea,.custom-div{
     /* 75+25=100%  */
     width:73%;
     display: inline-block;
-    /* here gender ni male sanagi sam rakhna ko lagiuse gareko */
+    /* here gender ni male female sanagi sam rakhna ko lagi inline-block use  garne*/
+    height: 30px;
+
+}
+textarea{
+    height:100px
+}
+input[type="radio"],input[type='checkbox']{
+
+    margin-bottom: 10px;
 }
 
-
 /* here male female ra others lai inline chodne */
-
 
 .custom-div{
     /* here inline flex garda kheri gender ra male haru same line ma aucha */
