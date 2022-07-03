@@ -1,19 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css_form.css">
 </head>
+
 <body>
+    <form method="get">
 
-    <form>
 
-        <label for="f_name">First Name</label>
-        <input type="text" id="f_name">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="first_name" placeholder="enter first name here">
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="last_name">
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="date">
+
+
+      <!-- abha yesma tai label ma 25% use garnu bhayena -->
+      <!-- here label ma class thapne -->
+      <!-- paila class ganre ra div banaune dib bhanye pachi tala aucha-->
+        <label for="">Gender:</label>
+        <div class="custom-div">
+            <input type="radio" id="m" name="gender" value="male">
+            <label for="m" class="custom-label">Male</label>
+            <input type="radio" id="f" name="gender" value="female">
+            <label for="f" class="custom-label">Female</label>
+            <input type="radio" name="gender" id="o" value="others">
+            <label for="o" class="custom-label">Others</label>
+        </div>
+
+        <label for="ph">Phone No.</label>
+        <input type="number">
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+
+        <label for="pwd">Password:</label>
+        <input type="password" id="pwd" name="pass">
+
+
+        <label for="add">Address</label>
+        <select name="address" id="add">
+            <option value="ktm">Kathmandu</option>
+            <option value="pkr">Pokhara</option>
+            <option value="bir">Birgunj</option>
+        </select>
+
+
+        <label for="desc">Description</label>
+        <textarea name="decription" id="desc" cols="30" rows="5"></textarea>
+
+
+        <!-- here yesma ma ni label ma class name thapne -->
+        <label for="">Skills</label>
+        <div class="custom-div">
+            <input type="checkbox" name="skill" id="C" value="c">
+            <label for="C" class="custom-label">C</label>
+            <input type="checkbox" name="skill" id="Java" value="java">
+            <label for="Java" class="custom-label">Java</label>
+            <input type="checkbox" name="skill" id="photoshop" value="photoshop">
+            <label for="photoshop" class="custom-label">Photoshop</label>
+        </div>
+
+
+        <div class="custom-div2">
+            <button>submit</button>
+            <input type="submit">
+            <input type="reset">
+        </div>
     </form>
-    
 
 </body>
+
 </html>

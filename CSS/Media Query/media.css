@@ -22,14 +22,22 @@
         /* background-color: black; */
         background-image: url(IOS.jpg);
         background-size: contain;
+
     }
      
 }
 /* we can use more breakpoint */
 /* min width yedi 540 cha bhane tyo bhanda mathi bhaneko  */
-@media screen and (max-width:500px){
+@media screen and (max-width:700px){
     .container{
         background-color: brown;
+        height: 700px;
     }
 }
 
+/* min width yedi 800 cha bhane tyo bhanda mathi bhaneko  */
+@media screen and (min-width:800px){
+    .container{
+        background-color: green;
+    }
+}

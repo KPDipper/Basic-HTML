@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form{
+    width:75%;
+    margin: auto;
+    border:5px solid red;
+    padding:10px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+label{
+    width:25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* to bring same line for gender and its radio like male female we use inline block  */
+input[type="text"],input[type='date'],input[type='email'],input[type='password']
+,input[type='number'],.custom-div
+{
+    width:73%;
+    display: inline-block;
+    height:30px;
+
+}
+.custom-label{
+    display: inline;
+}
+
+.custom-div{
+    
+}
