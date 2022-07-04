@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            /* here 4 wota row cha ra 3 ta column cha*/
+            /* gere 4 samm agarda kheri merge huncha */
+            display: grid;
+            grid-template-rows: 8vh 42vh 42vh 8vh;
+            /* grid-template-rows: auto auto auto auto; */
+            /* here viewport ko height use garnu parcha */
+
+            grid-template-columns: 20% auto auto;
+        }
+        .navbar{
+            background-color: blue;
+            
+            grid-column-start:1;
+            grid-column-end:4;
+
+            /* here end tai hamile deko value bhanda 1 badi aucha */
+            /* here esko row euta matra cha not included */
+            /* // end not included  */
+            /* yedi esko hamile start kata end kata include garne bhane euta euta grid ma gayera bascha 
+            
+            yo seriallly gayera bascha*/
+            
+        }
+        ul{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            list-style: none;
+            padding-top: 15px;
+            font-weight: bold;
+            text-transform: capitalize;
+            font-variant: small-caps;
+        }
+
+        .left-sidebar{
+            background-color: orange;
+            grid-row-start: 2; 
+            grid-row-end: 4;
+        }
+        .right-top{
+            background-color: aqua;
+            grid-column-start:2;
+            grid-column-end:4;
+
+            /* no needed sincle only one row */
+            grid-row-start: 2;
+            grid-row-end:3;
+        }
+        .right-bottom-left{
+            background-color: blueviolet;
+        }
+        .right-bottom-right{
+            background-color: brown;
+        }
+        .footer{
+            background-color: blue;
+            grid-column-start:1;
+            grid-column-end: 4;
+            
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    
+    </style>
+</head>
+<body>
+    <!-- container chaincha sabai ma container bitra wrap garnu parcha na bhaye body ma garnu parcha-->
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Blogs</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="left-sidebar">left side bar</div>
+        <div class="footer">footer</div>
+        <div class="right-top">right top</div>
+        <div class="right-bottom-left">right bottom left</div>
+        <div class="right-bottom-right">right bottom right</div>
+        
+        
+    </div>
+</body>
+
+</html>
